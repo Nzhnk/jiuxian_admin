@@ -1,0 +1,8 @@
+{
+	"bgStatus" : true,
+	"error" : "700",
+	"errorMsg" : "无法获取数据",
+	"data" : {
+		"isLogin" : false
+	}
+}

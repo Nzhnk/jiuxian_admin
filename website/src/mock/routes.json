@@ -1,0 +1,5 @@
+{
+	"/api/users/islogin" : "/isLogin",
+	"/api/users/loginState" : "/loginState",
+	"/api/users/isregister" : "/isRegister"
+}

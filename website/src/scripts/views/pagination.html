@@ -1,0 +1,11 @@
+<ul class="pagination pagination-sm no-margin pull-right">
+	<li><a href="#/product/0">首页</a></li>
+	<% for(var i = 0; i < pageSum; i ++ ){ %>
+		{{if i == pagination}}
+			<li class="active"><a href="#/product/{{i}}">{{i+1}}</a></li>
+		{{else}}
+			<li><a href="#/product/{{i}}">{{i+1}}</a></li>
+		{{/if}}
+	<% } %>
+	<li><a href="#/product/{{pageSum-1}}">尾页</a></li>
+</ul>

@@ -1,0 +1,78 @@
+#nav_myself{
+	background: #000;
+}
+.skin-blue .main-header .logo_custom{
+	background: #345;
+	&:hover{
+		background: #345;
+	}
+}
+#logo_lg_custom{
+	background: #345;
+}
+#sidebar_custom{
+	transition: all .5s;
+	&:hover{
+		background: #e00;
+	}
+}
+.xs_cusome{
+	line-height: 1;
+	padding: 17px 15px;
+	transition: all .5s;
+	&:hover{
+		background: #e00;
+	}
+}
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu{
+	right: 15px;
+}
+.form-horizontal .label_self{
+	text-align: left;
+}
+#form_tr td{
+	font-family: "仿宋";
+	color:  #000;
+	font-size: 16px;
+	text-align: center;
+	height: 67px;
+	line-height: 67px;
+}
+#form_tr th{
+	font-family: "仿宋";
+	color:  #000;
+	font-size: 16px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	&:nth-of-type(7){
+		width: 150px;
+	}
+	&:nth-of-type(8){
+		width: 160px;
+	}
+}
+#form_tr .a_self{
+	float: left;
+	margin-top: 17px;
+}
+#form_tr .btn-warning{
+	margin-top: 17px;
+}
+.list_self{
+	width: 50px;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 10000;
+    display: none;
+    .modal-content{
+    	border-radius: 5px;
+    	overflow: hidden;
+    }
+}

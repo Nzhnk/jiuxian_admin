@@ -1,0 +1,12 @@
+{
+    <% if (issignin) { %>
+        "result": true,
+    <% } else {%>
+        "result": false,
+        "errmsg": "is not signin",
+    <% } %>
+    "data": {
+        "issignin": <%= issignin %>,
+        "username": "<%= username %>"
+    }
+}

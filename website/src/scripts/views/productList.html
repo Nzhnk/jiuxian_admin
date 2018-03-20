@@ -1,0 +1,46 @@
+<div class="box" style="border-color: #e00;">
+	<div class="box-header with-border">
+		<h3 class="box-title pull-left" style="margin-top: 8px;">商品列表</h3>
+		<a href="#/productAdd" class="btn btn-info pull-right">添加商品</a>
+		<div class="input-group input-group-sm pull-left" style="width: 150px;margin: 2px 0 0 20px;">
+			<input type="text" name="table_search" class="form-control" id="searchInput" placeholder="请输入关键字">
+			<div class="input-group-btn">
+				<button type="button" id="searchBtn" class="btn btn-default"><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="box-body">
+		<!-- <a href="#/product/0"><button class="btn btn-default btn-sm"><i class="fa fa-mail-forward">回到列表首页</i></button></a> -->
+		<table class="table table-bordered" id="form_tr">
+			<tr">
+				<th>序号</th>
+				<th>商品图标</th>
+				<th>中文名称</th>
+				<th>英文名称</th>
+				<th>商品价格</th>
+				<th>商品用途</th>
+				<th>添加时间</th>
+				<th>商品操作</th>
+			</tr>
+			{{each data}}
+			<tr class="tr_self">
+				<td>{{$index+1}}.</td>
+				<td><img src="http://localhost:3000/imgUploads/{{$value.productLogo}}" alt="" class="list_self"></td>
+				<td>{{$value.productNamezh}}</td>
+				<td>{{$value.productNameen}}</td>
+				<td><span class="badge bg-red">￥{{$value.productPrice}}</span></td>
+				<td>{{$value.productUses}}</td>
+				<td>{{$value.createTime}}</td>
+				<td style="width: 160px !important;">
+					<a href="#/productEdit/{{$value._id}}|{{pagination || 0}}" class="a_self"><button class="btn btn-primary pull-left edit_btn">更改<span class="fa fa-edit"></span></button></a>
+					<button class="btn btn-warning pull-right" id="{{$value._id}}">删除<span class="fa fa-remove"></span></button>
+				</td>
+			</tr>
+			{{/each}}
+		</table>
+	</div>
+	<div class="box-footer clearfix" id="pagination">
+		<!-- 页码 -->
+	</div>
+</div>

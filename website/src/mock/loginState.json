@@ -1,0 +1,8 @@
+{
+	"bgState" : true,
+	"error" : "600",
+	"errorMsg" : "数据出现错误",
+	"data" : {
+		"loginState" : true
+	}
+}

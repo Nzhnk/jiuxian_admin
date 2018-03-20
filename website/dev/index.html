@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>丝芙兰信息管理系统平台</title>
+
+	<!-- Bootstrap 3.3.6 -->
+	<link rel="stylesheet" href="libs/styles/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="libs/styles/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="libs/styles/ionicons.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="libs/styles/AdminLTE.min.css">
+	<link rel="stylesheet" href="libs/styles/skin-blue.min.css">
+
+	<link rel="stylesheet" href="styles/app.css">
+	<!--[if lt IE 9]>
+		<script src="libs/scripts/html5shiv.min.js"></script>
+		<script src="libs/scripts/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+	<div id="modal"></div>
+	<div>
+		<!-- Main Header -->
+		<header class="main-header">
+			<!-- Logo -->
+			<a href="javascript:;" class="logo logo_custom">
+				<!-- mini logo for sidebar mini 50x50 pixels -->
+				<span class="logo-mini" style="font-size: 12px !important;">Sephora</span>
+				<!-- logo for regular state and mobile devices -->
+				<span class="logo-lg" id="logo_lg_custom"><b>丝芙兰</b>信息管理系统</span>
+			</a>
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation" id="nav_myself">
+				<!-- Sidebar toggle button-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" id="sidebar_custom">
+					<span class="sr-only">切换导航</span>
+				</a>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- messages Code -->
+						<!-- User Account Menu -->
+						<!-- Control Sidebar Toggle Button -->
+						<li class="control_self">
+							<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="static/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info" id="username_person">
+
+					</div>
+				</div>
+
+				<!-- search form (Optional) -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="搜索关键字...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu" id="leftMenu">
+					<li class="header">控制面板</li>
+					<!-- Optionally, you can add icons to the links -->
+					<li class="active"><a href="#/"><i class="fa fa-home"></i> <span>首页</span></a></li>
+					<!-- <li><a href="#/product"><i class="fa fa-subway"></i> <span>商品信息</span></a></li> -->
+					<!--  -->
+					<li class="treeview">
+						<a href="#/product"><i class="fa fa-subway"></i> <span>商品信息</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="#/product">商品列表</a></li>
+							<li><a href="#/productAdd">添加商品</a></li>
+						</ul>
+					</li>
+					<li><a href="#/"><i class="fa fa-home"></i> <span>注册用户</span></a></li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+
+			</section>
+
+			<!-- Main content -->
+			<section class="content" id="content_os">
+
+				<!-- Your Page Content Here -->
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer">
+			<!-- To the right -->
+			<div class="pull-right hidden-xs">
+				好程序员5 牛志昊 Node.js项目
+			</div>
+			<!-- Default to the left -->
+			<strong>Copyright &copy; 2018 <a href="javascript:;">GP5</a>.</strong> All rights reserved.
+		</footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Create the tabs -->
+			<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+				<li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+				<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<!-- Home tab content -->
+				<div class="tab-pane active" id="control-sidebar-home-tab">
+					<h3 class="control-sidebar-heading">近期活动</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+								<div class="menu-info">
+									<h4 class="control-sidebar-subheading">Langdon 的生日</h4>
+
+									<p>Will be 23 on April 24th</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- /.control-sidebar-menu -->
+
+					<h3 class="control-sidebar-heading"> 任务进度</h3>
+					<ul class="control-sidebar-menu">
+						<li>
+							<a href="javascript::;">
+								<h4 class="control-sidebar-subheading">
+									自定义模板设计
+									<span class="pull-right-container">
+										<span class="label label-danger pull-right">70%</span>
+									</span>
+								</h4>
+
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- /.control-sidebar-menu -->
+
+				</div>
+				<!-- /.tab-pane -->
+				<!--  统计信息选项卡内容 -->
+				<div class="tab-pane" id="control-sidebar-stats-tab"> 统计信息选项卡内容</div>
+				<!-- /.tab-pane -->
+				<!-- Settings tab content -->
+				<div class="tab-pane" id="control-sidebar-settings-tab">
+					<form method="post">
+						<h3 class="control-sidebar-heading">常规设置项</h3>
+
+						<div class="form-group">
+							<label class="control-sidebar-subheading">
+								报告面板用法
+								<input type="checkbox" class="pull-right" checked>
+							</label>
+
+							<p>
+								常规设置选项的相关信息
+							</p>
+						</div>
+						<!-- /.form-group -->
+					</form>
+				</div>
+				<!-- /.tab-pane -->
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+
+	<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="libs/scripts/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="libs/scripts/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="libs/scripts/app.min.js"></script>
+<!-- Atr-template -->
+<script src="libs/scripts/template-web.js"></script>
+
+<script src="libs/scripts/web-storage-cache.min.js"></script>
+
+<script src="libs/scripts/jquery.form.min.js"></script>
+
+<script src="scripts/app.js"></script>
+</body>
+</html>

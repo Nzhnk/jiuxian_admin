@@ -1,0 +1,53 @@
+<div class="box box-info" style="border-color: #e00;">
+	<div class="box-header with-border">
+		<h3 class="box-title">编辑商品信息</h3>
+	</div>
+	<!-- /.box-header -->
+	<!-- form start -->
+	<form class="form-horizontal" id="editForm" action="/api/products/edit/{{_id}}" enctype="multipart/form-data" method="post">
+		<div class="box-body">
+			<div class="form-group">
+				<label for="productNamezh" class="col-sm-2 control-label">中文名称</label>
+
+				<div class="col-sm-9">
+					<input type="email" class="form-control" id="productNamezh" name="productNamezh" placeholder="请输入中文名称" value="{{productNamezh}}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="productNameen" class="col-sm-2 control-label">英文名称</label>
+
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="productNameen" name="productNameen" placeholder="请输入英文名称" value="{{productNameen}}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="productLogo" class="col-sm-2 control-label">商品图标</label>
+
+				<div class="col-sm-9">
+					<img src="http://localhost:3000/imgUploads/{{productLogo}}" alt="" style="width: 180px;height: 180px;">
+				</div>
+				<div class="col-sm-9 col-sm-offset-2">
+					<input type="file" class="form-control" id="productLogo" name="productLogo" placeholder="请选择商品图片">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="productUses" class="col-sm-2 control-label">商品用途</label>
+
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="productUses" name="productUses" placeholder="请输入商品用途" value="{{productUses}}">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="productPrice" class="col-sm-2 control-label">商品价格</label>
+
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="productPrice" name="productPrice" placeholder="请输入商品价格" value="{{productPrice}}">
+				</div>
+			</div>
+		</div>
+		<div class="box-footer">
+			<a href="#/product" id="goBackList" ><button type="button" class="btn btn-default">返回列表</button></a>
+			<button type="button" id="editSubmit" class="btn btn-info pull-right">提交修改信息</button>
+		</div>
+	</form>
+</div>

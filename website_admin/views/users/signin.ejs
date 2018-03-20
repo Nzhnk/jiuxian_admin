@@ -1,0 +1,13 @@
+{
+    <% if (success) { %>
+        "result": true,
+    <% } else {%>
+        "result" false,
+        "errmsg": "can not signin",
+    <% } %>
+    "data": {
+        "success": <%= success %>,
+        "username": "<%= username %>",
+        "token": "<%= token %>"
+    }
+}

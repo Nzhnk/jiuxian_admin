@@ -1,0 +1,11 @@
+{
+    <% if (success) { %>
+        "result": true,
+    <% } else {%>
+        "result" false,
+        "errmsg": "can not signup, the username had already existed",
+    <% } %>
+    "data": {
+        "success": "<%= success %>",
+    }
+}
